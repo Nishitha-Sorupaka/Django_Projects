@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align='center'>
+      <h1>Do you want to really delete book:{{book.title}}????</h1>
+      <form method="post">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger" name="" value="Delete Book">
+        <a class="btn btn-success" href="/list2">Cancel(Don't Delete)</a>
+      </form>
+    </div>
+</body>
+</html>

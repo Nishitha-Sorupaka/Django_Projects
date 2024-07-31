@@ -1,0 +1,17 @@
+.container{
+margin-top: 150px; text-align: center;
+}
+.container .jumbotron{ background: red; color: white;
+}
+.jumbotron a{ background: yellow; color: red;
+border: 2px solid green;
+}
+#specialp{ color: red;
+text-align: center; font-size: 50px;
+}
+table{
+color: yellow; background: red; margin: auto; font-size: 20px;
+}
+h1{
+    color: cyan;
+}

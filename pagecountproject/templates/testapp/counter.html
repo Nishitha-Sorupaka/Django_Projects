@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/count.css' %}">
+    <style>
+        span{
+            font-size: 150px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>This page is visited <span>{{count}}</span> times</h1>
+</body>
+</html>

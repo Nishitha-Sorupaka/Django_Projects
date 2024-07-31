@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <h1>All Books Information</h1>
+        <ol>
+        {% for book in books %}
+            <li><a href="/{{book.id}}">{{book.title}}</a></li>
+        {% endfor %}
+        </ol>
+          <a class="btn btn-success btn-lg" href="/create">Insert New Book</a>
+    </div>
+</body>
+</html>

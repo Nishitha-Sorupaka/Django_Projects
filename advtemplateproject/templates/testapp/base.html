@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/advt1.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="/" >Mahesh News</a>
+        <img src="{% static 'images/Merida.jpg' %}" style="height: 40px; width: auto;">
+        <div class="container">
+            <ul class="navbar-nav d-flex flex-row">
+                <li><a class="navbar" href="/movies">Movies</a></li>
+                <li><a class="navbar" href="/sports">Sports</a></li>
+                <li><a class="navbar" href="/politics">Politics</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body_block %}
+    {% endblock %}
+</body>
+</html>

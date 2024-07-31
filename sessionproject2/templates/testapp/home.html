@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to Naresh IT</h1>
+    <form action="/second">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Enter name">
+    </form>
+</body>
+</html>

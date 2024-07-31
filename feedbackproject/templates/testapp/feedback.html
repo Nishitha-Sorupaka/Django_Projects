@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+</head>
+<body>
+<div class="container" align="center">
+  <div class="jumbotron">
+  {% if submitted %}
+  <h1>Hello {{name}}, thanks for providing feedback, it is very helpful for us to provide better service</h1>
+    {% else %}
+    <h1 class="text-decoration-underline">Student Feedback Form</h1>
+    <form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success" name="" value="SubmitFeedback">
+    </form>
+   </div>
+    {% endif %}
+</div>
+</body>
+</html>

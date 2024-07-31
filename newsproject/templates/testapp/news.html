@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Channel Portal</title>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+<h1>{{head_msg}}</h1>
+<ul align="left">
+    <li>{{sub_msg1}}</li>
+    <li>{{sub_msg2}}</li>
+    <li>{{sub_msg3}}</li>
+</ul>
+{% if type == 'movies' %}
+<img src="{% static 'images/Anna.jpg' %}" width="200" height="200">
+<img src="{% static 'images/Ariel.jpg' %}" width="200" height="200">
+<img src="{% static 'images/bella.jpg' %}" width="200" height="200">
+{% elif type == 'sports' %}
+<img src="{% static 'images/Cynderella.jpg' %}" width="200" height="200">
+<img src="{% static 'images/bella2.jpeg' %}" width="200" height="200">
+<img src="{% static 'images/Elsa.jpg' %}" width="200" height="200">
+{% elif type == 'politics' %}
+<img src="{% static 'images/Jasmine.jpg' %}" width="200" height="200">
+<img src="{% static 'images/Mulan.jpg' %}" width="200" height="200">
+<img src="{% static 'images/Rapunzel.jpg' %}" width="200" height="200">
+{% endif %}
+</body>
+</html>
